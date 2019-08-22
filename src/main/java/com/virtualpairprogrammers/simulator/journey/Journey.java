@@ -17,8 +17,11 @@ import org.springframework.jms.core.JmsTemplate;
  */
 public class Journey implements Callable<Object> 
 {
+	
 	private List<String> positions;
+	
 	private String vehicleName;
+	private String dummy;
 	private JmsTemplate jmsTemplate;
 	private String queueName;
     private static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
